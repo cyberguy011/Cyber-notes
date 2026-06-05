@@ -1,8 +1,13 @@
-print("=== Cyber Notes ===")
+topics = []
 
-topic = input("Enter a cybersecurity topic: ")
+while True:
+    topic = input("Enter topic (or quit): ")
 
-print("\nYou entered:")
-print(topic)
+    if topic.lower() == "quit":
+        break
 
-print("\nKeep studying and keep learning!")
+    topics.append(topic)
+
+print("\nYour Topics:")
+for item in topics:
+    print("-", item)
