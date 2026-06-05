@@ -8,3 +8,4 @@ Git & GitHub
 Incident Response
 Digital Forensics
 Web Security
+Linux Permissions
