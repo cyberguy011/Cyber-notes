@@ -1,13 +1,7 @@
-topics = []
+print("=== Cyber Notes ===\n")
 
-while True:
-    topic = input("Enter topic (or quit): ")
+with open("topics.txt", "r") as file:
+    topics = file.readlines()
 
-    if topic.lower() == "quit":
-        break
-
-    topics.append(topic)
-
-print("\nYour Topics:")
-for item in topics:
-    print("-", item)
+for number, topic in enumerate(topics, start=1):
+    print(f"{number}. {topic.strip()}")
